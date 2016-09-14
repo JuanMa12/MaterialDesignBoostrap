@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="image/alquila.png" type="image/x-icon">
+    <title>AlquilaYa</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-material-design.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//fezvrasta.github.io/snackbarjs/dist/snackbar.min.css" rel="stylesheet">
+    <!--
+    Hecho por: Juan Manuel Ruiz
+    Tecnologia en Desarrollo Informatico
+    -->
+</head>
+<body style="background-color: #f7f7f7">
+<div class="container" style="background-color: white">
+    <!--nav-->
+    <div class="navbar navbar-warning">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="javascript:void(0)"
+                   style="font-size: 25px; font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif">AlquilaYa</a>
+            </div>
+            <div class="navbar-collapse collapse navbar-inverse-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="about.html">Nosotros</a></li>
+                    <li class="active"><a href="contact.html">Contactenos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- fin nav -->
+
+    <!-- alert -->
+    <div class="col-md-8"></div>
+    <div class="col-md-4">
+        <div class="alert alert-dismissible alert-success">
+            <button type="button" class="close" data-dismiss="alert" style="margin-right: 20px">×</button>
+            <h4>Aviso!</h4>
+
+            <p>Conoce nuestros precios
+                <a href="index.html" class="alert-link">Aqui</a>.</p>
+        </div>
+    </div>
+    <!-- fin laert -->
+
+
+    <!-- content -->
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <div class="jumbotron" style="display: inline-block">
+            <div class="text-center">
+                <h3>Contactanos</h3>
+            </div>
+            <form action="#" method="post">
+            <div class="col-md-2">
+                <label for="name" class="control-label">Nombre</label>
+                </div>
+            <div class="col-md-4">
+                <div class="fom-group label-floating">
+                    <input type="text" name="" id="name" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <label for="name" class="control-label">Correo</label>
+            </div>
+            <div class="col-md-4">
+                <div class="fom-group label-floating">
+                    <input type="text" name="" id="email" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <label for="name" class="control-label">Asunto</label>
+            </div>
+            <div class="col-md-4">
+                <div class="fom-group label-floating">
+                    <input type="text" name="" id="asunto" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <label for="name" class="control-label">Mensaje</label>
+            </div>
+            <div class="col-md-4">
+                <div class="fom-group label-floating">
+                    <textarea name="" id="message" class="form-control" required></textarea>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="text-center">
+                    <a type="submit" class="btn btn-raised btn-warning" data-content="Correo Enviado Exitosamente!"
+                       data-toggle="snackbar" data-timeout="0" data-snackbar-id="snackbar1473789314735">Enviar</a>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div id="snackbar-container"><div id="snackbar1473789313498" class="snackbar"><span class="snackbar-content">This is a snackbar! Lorem lipsum dolor sit amet...</span></div>
+        <div id="snackbar1473789314735" class="snackbar toast"><span class="snackbar-content">This is a toast! Lorem lipsum dolor sit amet...</span></div></div>
+    <!-- fin content -->
+
+    <!-- footer-->
+    <div class="col-md-12">
+        <div class="text-center">
+            <div class="col-md-12"><br></div>
+            <div class="text-center" style="background-color: #FF5722; height: 60px">
+                Todos los derechos reservados <i class="glyphicon glyphicon-copyright-mark"></i> 2016
+            </div>
+        </div>
+    </div>
+    <!-- fin footer-->
+</div>
+</body>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/bootstrap.js" type="text/javascript"></script>
+<script src="js/material.js" type="text/javascript"></script>
+<script src="//fezvrasta.github.io/snackbarjs/dist/snackbar.min.js"></script>
+<script>
+    $.material.init();
+</script>
+</html>
